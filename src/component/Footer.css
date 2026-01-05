@@ -1,0 +1,61 @@
+.footer {
+  width: 100%;
+  background: linear-gradient(to right, #000, #2b2b2b, #4a4a4a);
+  padding: 22px 20px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Name */
+.footer-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+/* Role */
+.footer-role {
+  font-size: 13px;
+  color: #cfcfcf;
+  margin-bottom: 10px;
+}
+
+
+
+/* Social */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-social a {
+  color: #bdbdbd;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  color: #ffffff;
+}
+
+/* Copyright */
+.footer-copy {
+  font-size: 12px;
+  color: #9a9a9a;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .footer-links,
+  .footer-social {
+    gap: 12px;
+  }
+}

@@ -3,6 +3,9 @@ import "./Hero.css";
 import Main from "./Main";
 import About from "./About";
 import Projects from "./Projects";
+import { Link } from "react-router-dom";
+import Contact from "./Contact";
+import Footer from "./Footer";
 
 
 function Hero() {
@@ -31,7 +34,6 @@ function Hero() {
     <section className="hero-section" ref={heroRef}>
       <div className="hero-container">
 
-        {/* LEFT */}
         <div className={`hero-left ${show ? "show" : ""}`}>
           <p className="hero-hi">Hi there!</p>
 
@@ -44,11 +46,12 @@ function Hero() {
           <p className="hero-desc">
             I am a MERN Stack Developer passionate about building scalable, high-performance web applications with clean user interfaces and robust backend systems..
           </p>
-
+<Link style={{textDecoration:'none'}} to={"/About"}>
           <button className="hero-btn">MORE ABOUT ME</button>
+  </Link>
         </div>
 
-        {/* RIGHT */}
+
         <div className={`hero-right ${show ? "show" : ""}`}>
           <img className="primage"
             src="src/assets/Untitled design.png"
@@ -58,7 +61,6 @@ function Hero() {
 
       </div>
 
-      {/* Scroll Indicator */}
       <div className="scroll-indicator">
         <span></span>
       </div>
@@ -66,7 +68,8 @@ function Hero() {
 
     <About/>
     <Projects/>
-    
+    <Contact/>
+    <Footer/>
 
     </>
   );
