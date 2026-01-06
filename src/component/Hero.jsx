@@ -31,7 +31,7 @@ function Hero() {
 
   return (
     <>
-    <section className="hero-section" ref={heroRef}>
+    <section className="hero-section" id="home" ref={heroRef}>
       <div className="hero-container">
 
         <div className={`hero-left ${show ? "show" : ""}`}>
@@ -46,9 +46,7 @@ function Hero() {
           <p className="hero-desc">
             I am a MERN Stack Developer passionate about building scalable, high-performance web applications with clean user interfaces and robust backend systems..
           </p>
-<Link style={{textDecoration:'none'}} to={"/About"}>
           <button className="hero-btn">MORE ABOUT ME</button>
-  </Link>
         </div>
 
 
