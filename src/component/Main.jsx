@@ -2,11 +2,12 @@ import React, { useEffect, useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import "./Main.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Link } from "react-router-dom";
 
 function Main() {
   const [active, setActive] = useState("home");
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // mobile menu state
 
+  // IntersectionObserver for active section
   useEffect(() => {
     const sections = document.querySelectorAll("section");
 
@@ -18,7 +19,7 @@ function Main() {
           }
         });
       },
-      { threshold: 0.6 } // 60% visible
+      { threshold: 0.6 } 
     );
 
     sections.forEach((section) => observer.observe(section));
@@ -26,9 +27,21 @@ function Main() {
     return () => observer.disconnect();
   }, []);
 
+  // Close mobile menu when link is clicked
+  const handleMenuClick = () => {
+    if (isMenuOpen) {
+      setIsMenuOpen(false);
+    }
+  };
+
   return (
     <>
-      <Navbar fixed="top" expand="lg" className="custom-navbar">
+      <Navbar
+        fixed="top"
+        expand="lg"
+        className="custom-navbar"
+        expanded={isMenuOpen} // control collapse state
+      >
         <Container fluid className="px-5">
           <Navbar.Brand href="#home" className="logo">
             <img
@@ -38,13 +51,18 @@ function Main() {
             />
           </Navbar.Brand>
 
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          {/* Toggle button */}
+          <Navbar.Toggle
+            aria-controls="basic-navbar-nav"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          />
 
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto nav-right">
               <Nav.Link
                 href="#home"
                 className={active === "home" ? "active-link" : ""}
+                onClick={handleMenuClick}
               >
                 HOME
               </Nav.Link>
@@ -52,6 +70,7 @@ function Main() {
               <Nav.Link
                 href="#about"
                 className={active === "about" ? "active-link" : ""}
+                onClick={handleMenuClick}
               >
                 ABOUT
               </Nav.Link>
@@ -59,6 +78,7 @@ function Main() {
               <Nav.Link
                 href="#projects"
                 className={active === "projects" ? "active-link" : ""}
+                onClick={handleMenuClick}
               >
                 PROJECTS
               </Nav.Link>
@@ -66,6 +86,7 @@ function Main() {
               <Nav.Link
                 href="#contact"
                 className={active === "contact" ? "active-link" : ""}
+                onClick={handleMenuClick}
               >
                 CONTACT
               </Nav.Link>

@@ -22,6 +22,7 @@
   margin: 0 18px;
   position: relative;
   transition: color 0.3s ease;
+
 }
 
 /* Hover color */
@@ -55,4 +56,12 @@
 .active-link::after {
   width: 100% !important;
 }
+@media (max-width: 990px) {
+  .nav-right{
+    background-color: #00000066;
+  padding: 20px;
+  border-radius: 20px;
+}
 
+
+}

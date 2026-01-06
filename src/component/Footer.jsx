@@ -9,14 +9,14 @@ function Footer() {
         <p className="footer-role">Front-End Developer</p>
         <div className="footer-social">
           <a
-            href="https://www.linkedin.com/in/your-linkedin-id"
+            href="https://www.linkedin.com/in/yaseen-md"
             target="_blank"
             rel="noreferrer"
           >
             LinkedIn
           </a>
           <a
-            href="https://github.com/your-github-id"
+            href="https://github.com/Myt-ware"
             target="_blank"
             rel="noreferrer"
           >
