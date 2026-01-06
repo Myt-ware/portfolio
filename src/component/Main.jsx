@@ -4,7 +4,7 @@ import "./Main.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Main() {
-  const [active, setActive] = useState("home");
+  const [active, setActive] = useState(" ");
   const [isMenuOpen, setIsMenuOpen] = useState(false); // mobile menu state
 
   // IntersectionObserver for active section
