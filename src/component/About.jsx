@@ -30,7 +30,7 @@ function About() {
         {/* LEFT IMAGE */}
         <div className="about-image">
           <img
-            src="public/yaseen.jpeg"
+            src="/yaseen.jpeg"
             alt="about"
           />
         </div>
