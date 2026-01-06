@@ -52,7 +52,7 @@ function Hero() {
 
         <div className={`hero-right ${show ? "show" : ""}`}>
           <img className="primage"
-            src="public/Untitled design.png"
+            src="/Untitled design.png"
             alt="profile"
           />
         </div>

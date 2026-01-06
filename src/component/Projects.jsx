@@ -32,7 +32,7 @@ function Projects() {
         <div className="project-card">
 
   <div className="project-image">
-    <img src="public/prt.webp" alt="Project" />
+    <img src="/prt.webp" alt="Project" />
 
     <div className="overlay">
       <h3>Portfolio Website</h3>
@@ -67,7 +67,7 @@ These projects reflect my journey in building responsive and user-friendly web a
 <div className="project-card">
 
   <div className="project-image">
-    <img src="public/pht.jpg" alt="Project" />
+    <img src="/pht.jpg" alt="Project" />
 
     <div className="overlay">
       <h3>Photo Folio Website</h3>
@@ -102,7 +102,7 @@ A curated collection of photographs highlighting my visual perspective. </p>
 <div className="project-card">
 
   <div className="project-image">
-    <img src="public/mntr.jpg" alt="Project" />
+    <img src="/mntr.jpg" alt="Project" />
 
     <div className="overlay">
       <h3>Mentor Website</h3>
@@ -136,7 +136,7 @@ A mentor website project created to practice structured layouts and professional
 <div className="project-card">
 
   <div className="project-image">
-    <img src="public/cnsult.jpg" alt="Project" />
+    <img src="/cnsult.jpg" alt="Project" />
 
     <div className="overlay">
       <h3>Consulting Website</h3>
@@ -171,7 +171,7 @@ A professional consulting platform showcasing services and business solutions.  
 <div className="project-card">
 
   <div className="project-image">
-    <img src="public/zaitoon.jpg" alt="Project" />
+    <img src="/zaitoon.jpg" alt="Project" />
 
     <div className="overlay">
       <h3>Zaitoon Restaurant Website</h3>
@@ -206,7 +206,7 @@ A responsive restaurant website highlighting food, menu, and customer experience
 <div className="project-card">
 
   <div className="project-image">
-    <img src="public/perfume.avif" alt="Project" />
+    <img src="/perfume.avif" alt="Project" />
 
     <div className="overlay">
       <h3>Axeo Perume Website</h3>
