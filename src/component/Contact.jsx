@@ -70,7 +70,7 @@ function Contact() {
 
       {/* WhatsApp Floating Button */}
       <a
-  href="https://wa.me/919633607957?text=Hi%20Yaseen%20👋%0AI%20viewed%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project%20with%20you.%20🙂"
+  href="https://wa.me/919633607957?text=Hi%20Yaseen%20👋%0AI%20viewed%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project%20with%20you.%20"
   className="whatsapp-float"
   target="_blank"
   rel="noreferrer"
